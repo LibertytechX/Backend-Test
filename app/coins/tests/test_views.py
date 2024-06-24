@@ -4,8 +4,6 @@ from django.urls import reverse
 from rest_framework.test import APITestCase
 from rest_framework import status
 from unittest.mock import patch
-from coins.views import AddFavouriteCoin
-from coins.serializers import FavouriteCoinSerializer
 from coins.models import FavouriteCoins
 
 from rest_framework_simplejwt.tokens import AccessToken

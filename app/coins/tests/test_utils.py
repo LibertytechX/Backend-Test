@@ -3,7 +3,6 @@ from rest_framework.test import APITestCase
 from unittest.mock import patch, MagicMock
 from coins.utils import CoinAPI, env
 
-from requests.models import Response
 
 
 class TestCoinAPI(APITestCase):

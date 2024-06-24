@@ -2,8 +2,6 @@ from rest_framework.test import APITestCase
 
 from core.serializers import UserSerializer
 
-from core.models import User
-
 
 class UserSerializerTestCase(APITestCase):
 

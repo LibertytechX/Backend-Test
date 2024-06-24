@@ -9,7 +9,6 @@ import environ
 import aiohttp
 import asyncio
 
-from rest_framework.pagination import PageNumberPagination
 
 env = environ.Env()
 environ.Env.read_env()

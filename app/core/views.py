@@ -4,7 +4,6 @@ from django.db import IntegrityError
 from rest_framework import status, generics
 from rest_framework.response import Response
 from rest_framework.exceptions import ValidationError
-from rest_framework_simplejwt.tokens import RefreshToken
 from rest_framework.permissions import AllowAny
 
 from .utils import get_serializer_key_error, response_data
