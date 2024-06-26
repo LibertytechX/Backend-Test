@@ -1,26 +1,11 @@
 from .base import *
 
-SECRET_KEY = '92yc9A4oOY%~?6\n]&xZc6+mW)"8)KMMZ8&KbSC\|gIPX!<[RQ9Co-4W_A#PsiG'
+SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ["*"]
-
-
-# Database
-# https://docs.djangoproject.com/en/4.0/ref/settings/#databases
-
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.postgresql',
-#         'NAME': 'libertydb',
-#         'USER': 'liberty',
-#         'PASSWORD': 'liberty',
-#         'HOST': 'localhost',  
-#         'PORT': '5432',      
-#     }
-# }
+ALLOWED_HOSTS = os.environ.get('ALLOWED_HOSTS').split(',')
 
 DATABASES = {
     'default': {
